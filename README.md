@@ -1,10 +1,13 @@
 # rNotes
 
 ## What is rNotes?
-rNotes is an android app written in java. It records voice using the phone internal mic since the user presses the record button to start. And it saves the last 5 – 15 seconds to the device (the user can select 5, 10, or 15), as soon as the user presses the button again. Meanly, it records and saves voice notes, as simple as that.
+rNotes is a java-based Android app.
+Since the user hits the record button to begin, it records voice using the phone's internal microphone.
+As soon as the user clicks the button again, it saves the last 5 – 15 seconds to the device (the user can select 5, 10, or 15 seconds).
 
 ### How is this useful?
-rNotes could be useful for students. They can record notes easily in lectures using it, rather than typing.  Also, it might be useful in debates.
+Students might find rNotes helpful. They can use it to easily record notes in lectures rather than typing.
+It could also be useful in debates.
 
 ## How it works?
 There are just two activities in the app; MainActivity and NoteActivity.
