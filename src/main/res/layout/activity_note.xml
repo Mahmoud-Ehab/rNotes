@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteActivity"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="10">
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#F6F6F6"
+        android:textSize="30sp"
+        android:text="Title"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_margin="40dp"
+        android:weightSum="6">
+
+        <ImageButton
+            android:id="@+id/play_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:src="@drawable/media_play"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="PlayNoteAudio" />
+
+        <TextView
+            android:id="@+id/progress_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/colorAccent"
+            android:text="" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:background="#38ada9"
+        android:textSize="30sp"
+        android:textColor="#F6F6F6"
+        android:text="Save Title"
+        android:onClick="Save" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="30dp"
+        android:background="#e55039"
+        android:textSize="30sp"
+        android:textColor="#F6F6F6"
+        android:text="Delete"
+        android:onClick="Delete"/>
+</LinearLayout>

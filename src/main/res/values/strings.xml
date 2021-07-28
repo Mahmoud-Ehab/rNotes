@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">rNotes</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Notes List</string>
+</resources>
